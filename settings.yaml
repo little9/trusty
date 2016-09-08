@@ -1,0 +1,17 @@
+---
+:local_server:
+    storage_directory: "/Users/jamie/Desktop/coll/"
+    fits_location: "bag"
+:institution:
+    source_org: "Example University"
+    institution: "example.edu"
+:remote:
+    user: ""
+    password: ""
+    includes: ""
+:aws:
+    url: ""
+    access_id: ""
+    secret_key: ""
+    bucket_name: ""
+    region: ""
