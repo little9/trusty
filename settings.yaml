@@ -1,6 +1,6 @@
 ---
 :local_server:
-    storage_directory: "/Users/jamie/Desktop/coll/"
+    storage_directory: "/Users/jamie/Desktop/storage/"
     fits_location: "bag"
 :institution:
     source_org: "Example University"
