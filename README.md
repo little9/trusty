@@ -26,5 +26,3 @@ python test.py
 ```
 ./trusty 'Title' 'Description' 'Restricted' /path/to/files
 ```
-
-
