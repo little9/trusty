@@ -1,5 +1,6 @@
-
 # trusty
+
+[![Build Status](https://travis-ci.org/little9/trusty.svg?branch=master)](https://travis-ci.org/little9/trusty)
 
 This is a Python utility for creating BagIt archives compatiable with
 the [APTrust bagging profile](https://sites.google.com/a/aptrust.org/aptrust-wiki/technical-documentation/processing-ingest/aptrust-bagit-profile#TOC-Bag-and-Bagging-Requirements).
