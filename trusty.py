@@ -7,9 +7,12 @@ from shutil import copyfile, move
 import bagit
 
 class Trusty:
-    def __init__(self, title):
+    def __init__(self, aptrust_info):
         self.settings = self.load_settings('./settings.yaml')
-        self.title = title
+        self.title = aptrust_info['title']
+        self.access = aptrust_info['access']
+        self.description = aptrust_info['description']
+    
     
         
     def load_settings(self,settings_file):
@@ -43,7 +46,6 @@ class Trusty:
         return dir_list
 
     def create_bags(self,dir_list):
-        
         """ Actually create the bags and write the APTrust info file """
         for dir in dir_list:
             dir = dir.split('/')[0]
@@ -55,7 +57,7 @@ class Trusty:
     def write_aptrust_info(self, dir):
         """ Write the aptrust-info.txt file """
         with open(dir+'/aptrust-info.txt', 'w+') as f:
-            s = "Title:"+self.title+"\nAccess: Restricted"
+            s = "Title: "+self.title+"\n"+"Description: "+self.description+"\nAccess: "+self.access
             f.write(s)
             f.close
             
@@ -65,6 +67,7 @@ class Trusty:
 
 
     def create_aptrust_bags(self,src):
+        """ Create APTrust bags for all files in a directory """
         dir_list = self.create_bag_dirs(self.file_list(src))
         self.create_bags(dir_list)
                                         

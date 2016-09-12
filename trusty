@@ -1,5 +1,5 @@
 #!/usr/bin/env python
 from trusty import Trusty
 import sys
-t = Trusty(sys.argv[2])
+t = Trusty({'title':sys.argv[2], 'description':sys.argv[3], 'access':sys.argv[4]})
 t.create_aptrust_bags()
