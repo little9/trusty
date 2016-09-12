@@ -6,7 +6,7 @@ import urllib
 from shutil import copyfile, move
 import bagit
 
-class Trusty:
+class Trusty(object):
     def __init__(self, aptrust_info):
         self.settings = self.load_settings('./settings.yaml')
         self.title = aptrust_info['title']

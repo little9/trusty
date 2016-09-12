@@ -3,9 +3,9 @@
 This is a Python utility for creating BagIt archives compatiable with
 the [APTrust bagging profile](https://sites.google.com/a/aptrust.org/aptrust-wiki/technical-documentation/processing-ingest/aptrust-bagit-profile#TOC-Bag-and-Bagging-Requirements).
 
-Usage:
+# Usage:
 
-``` python
+```python
 t = Trusty({'title':'Title','description':'A description','access':'Restricted'})
 t.create_aptrust_bags('./path/to/files')
 ```
@@ -15,5 +15,16 @@ include the entire directory struture for the file in the data/ folder of the ba
 
 After creation bags will be moved to storage location that is set in the settings.yaml file. 
 
+# Running tests:
+
+```bash
+python test.py
+```
+
+# Running on the command line
+
+```
+./trusty 'Title' 'Description' 'Restricted' /path/to/files
+```
 
 
