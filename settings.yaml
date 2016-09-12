@@ -1,7 +1,8 @@
 ---
 :local_server:
-    storage_directory: "/Users/jamie/Desktop/storage/"
+    storage_directory: "/Users/jlittle/Desktop/storage/"
     fits_location: "bag"
+    ignore: ".DS_Store"
 :institution:
     source_org: "Example University"
     institution: "example.edu"
