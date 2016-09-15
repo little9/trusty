@@ -1,11 +1,12 @@
 ---
 :local_server:
-    storage_directory: "/Users/jlittle/Desktop/storage/"
+    storage_directory: "/media/APTrust/"
+    storage_root: "/media/APTrust/"
     fits_location: "bag"
     ignore: ".DS_Store"
 :institution:
-    source_org: "Example University"
-    institution: "example.edu"
+    source_org: "University of Miami"
+    institution: "miami.edu"
 :remote:
     user: ""
     password: ""
